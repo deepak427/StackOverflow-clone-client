@@ -23,7 +23,7 @@ const QuestionDetails = () => {
   const navigate = useNavigate()
   const dispatch = useDispatch()
   const Location = useLocation();
-  const url = "https://stack-overflow-clone-server.onrender.com"
+  const url = "https://stack-overflow-clone-project.netlify.app/"
 
   const handlePostAnswer = (e, answerLength) =>{
     e.preventDefault()
