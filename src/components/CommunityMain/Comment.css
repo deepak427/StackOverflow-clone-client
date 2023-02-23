@@ -1,0 +1,81 @@
+.put-comment {
+    display: flex;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+.put-comment input{
+    margin-left: 10px;
+    padding: 8px 32px 8px 8px;
+    border: solid 1px #0000003e;
+    border-radius: 3px;
+    font-size: 13px;
+    flex-grow: 1;
+    width: 70%;
+}
+
+.put-comment .put-comment-btn {
+    padding: 7px 13px;
+    border: solid 1px blue;
+    border-radius: 3px;
+    background-color: #e7f8fe;
+    cursor: pointer;
+    transition: 0.2s;
+    margin: 0 10px;
+}
+
+.put-comment .put-comment-btn:hover{
+    background-color: #d3e4eb;
+}
+
+.comment-container {
+ display: flex;
+ align-items: center;
+ margin-bottom: 10px;
+ margin-left: 5px;
+}
+
+.comment-container .comment-main {
+    box-shadow: 0 10px 25px rgb(0 0 0 / 5%), 0 20px 48px rgb(0 0 0 / 5%),
+    0 1px 4px rgb(0 0 0 / 10%);
+  background-color: #f8f9f9;
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.comment-container .comment-main button{
+    background-color: transparent;
+    border: none;
+    padding: 5px 0px;
+    margin: 0px 10px 0px 0px;
+    color: #939292;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+    width: fit-content;
+    margin-left: auto;
+}
+
+.comment-container .comment-main h4 {
+    margin: 0;
+}
+
+.comment-container .comment-main p {
+    padding: 0;
+    margin: 10px 0 0 0;
+} 
+
+@media screen and (max-width: 475px) {
+    .comment-container .comment-main h4 {
+        font-size: 13px;
+    }
+    
+    .comment-container .comment-main p {
+        font-size: 13px;
+    } 
+  } 

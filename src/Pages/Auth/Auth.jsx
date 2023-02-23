@@ -10,9 +10,9 @@ import './Auth.css'
 const Auth = () => {
   const [isSignup, setSignup] = useState(false);
 
-  const [name, setName] = useState(false);
-  const [email, setEmail] = useState(false);
-  const [password, setPassword] = useState(false);
+  const [name, setName] = useState();
+  const [email, setEmail] = useState();
+  const [password, setPassword] = useState();
 
   const dispatch = useDispatch()
   const navigate = useNavigate()
@@ -34,6 +34,7 @@ const Auth = () => {
     }else{
       dispatch(login({email, password}, navigate))
     }
+    document.getElementsByClassName("auth-btn")[0].disabled = true;
   }
 
   return (

@@ -1,0 +1,99 @@
+.right-sidebar-friends {
+  width: 380px;
+  float: right;
+  margin: 40px 0 15px 40px;
+  font-size: 15px;
+}
+
+.find-friends-container {
+  width: 380px;
+  position: fixed;
+  margin-top: 10px;
+  box-shadow: 3px 3px 10px rgb(0 0 0 /5%), -3px -3px 10px rgb(0 0 0 /5%);
+}
+
+.find-friends-container form {
+  flex-grow: 1;
+  position: relative;
+}
+
+.find-friends-container form input {
+  min-width: 89%;
+  padding: 8px 10px 8px 32px;
+  font-size: 13px;
+  border: solid 1px #f1e5bc;
+  border-radius: 3px;
+}
+
+.find-friends-container form .search-icon {
+  position: absolute;
+  left: 10px;
+  top: 8px;
+}
+
+.find-friends-container h4 {
+  background-color: #fbf3d5;
+  margin: 0%;
+  padding: 15px;
+  border: solid 1px #f1e5bc;
+}
+
+.find-friends-container .all-users {
+  background-color: #fbf3d5;
+  padding: 15px;
+  border: solid 1px #f1e5bc;
+}
+
+.find-friends-container .all-users .user-header {
+  border: solid 1px #f1e5bc;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.find-friends-container .all-users .user-header h5 {
+  margin: 10px;
+}
+
+.find-friends-container .all-users .user-header .user-btn {
+  padding: 7px 13px;
+  border: solid 1px blue;
+  border-radius: 3px;
+  background-color: #e7f8fe;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.find-friends-container .all-users .user-header .user-btn:hover {
+  background-color: #d3e4eb;
+}
+
+@media screen and (max-width: 1200px) {
+  .right-sidebar-friends {
+    width: 300px;
+    margin: 40px 0 15px 30px;
+  }
+  .right-sidebar-friends .find-friends-container {
+    width: 300px;
+  }
+  .right-sidebar-friends .find-friends-container form input {
+    min-width: 86%;}
+}
+
+@media screen and (max-width: 1000px) {
+  .right-sidebar-friends {
+    width: 280px;
+    margin: 40px 0 15px 25px;
+  }
+  .right-sidebar-friends .find-friends-container {
+    width: 280px;
+  }
+  .right-sidebar-friends .find-friends-container form input {
+    min-width: 84%;}
+}
+
+@media screen and (max-width: 900px) {
+  .right-sidebar-friends {
+    display: none;
+  }
+} 

@@ -1,0 +1,45 @@
+.right-sidebar-find-friends {
+  width: 70%;
+  margin: 25px 0px;
+  padding: 0;
+}
+
+.right-sidebar-find-friends .find-friends-container {
+  position: absolute;
+  width: 70%;
+  margin-top: 20px;
+}
+
+.right-sidebar-find-friends .find-friends-container form input {
+  width: 60%;
+}
+
+@media screen and (max-width: 600px) {
+  .right-sidebar-find-friends .find-friends-container form input {
+    width: 50%;
+    min-width: 20%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .right-sidebar-find-friends .find-friends-container form input {
+    width: 60%;
+  }
+  .right-sidebar-find-friends .find-friends-container .all-users {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .right-sidebar-find-friends
+    .find-friends-container
+    .all-users
+    .user-header
+    h5 {
+    font-size: 12px;
+  }
+  .right-sidebar-find-friends .find-friends-container .all-users .user-header .user-btn{
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+}

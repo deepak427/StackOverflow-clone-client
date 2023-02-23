@@ -1,0 +1,85 @@
+.post-something{
+    background-color: #f1f2f3;
+    height: 100%;
+}
+
+.post-something-container{
+    margin: auto;
+    max-width: 1200px;
+}
+
+.post-something-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post-something-header h1{
+    padding: 80px 0px 20px 0px;
+}
+
+.post-something-container form .post-form-container{
+    background-color: white;
+    padding: 20px;
+    border-radius: 3px;
+    box-shadow: 0 10px 25px rgb(0 0 0 /5%),0 20px 48px rgb(0 0 0 /5%),
+    0 1px 4px rgb(0 0 0 /10%);
+}
+
+.post-something-container label h4{
+    margin-bottom: 0%;
+}
+
+.post-something-container label p{
+    margin: 0%;
+    padding: 3px 0px;
+    font-size: 13px;
+}
+
+.post-something-container label textarea{
+    padding: 10px;
+    border: solid 1px #0000003e;
+    font-family: 'Roboto',sans-serif;
+    width: calc(100% - 20px);
+    resize: vertical;
+}
+
+.post-btn{
+    margin: 30px 0px;
+    padding: 10px 10px;
+    background-color: #009bff;
+    border: none;
+    border: solid 1px #009bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.post-btn:hover{
+    background-color: #0086d8;
+}
+
+.image-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.image-container h4{
+    margin-bottom: 5px;
+    margin-top: 0px;
+}
+
+.image-container .btn-grey {
+    background-color: #f2f2f2;
+    color: #333;
+    border: 1px solid #888;
+    border-radius: 5px;
+    padding: 8px;
+    width: fit-content;
+    cursor: pointer;
+  }
+
+.image-container input {
+    display: none;
+}

@@ -1,0 +1,110 @@
+.subscription-main{
+    width: calc(100% - 300px - 24px);
+    float: left;
+    margin: 40px 0 15px 0;
+    padding: 0;
+}
+
+.plan{
+    margin-top: 10px;
+    box-shadow: 3px 3px 10px rgb(0 0 0 /5%),
+    -3px -3px 10px rgb(0 0 0 /5%);
+}
+
+.plan .plan-details{
+    background-color: #fbf3d5;
+    display: flex;
+    margin: 0%;
+    padding: 15px;
+    border: solid 1px #f1e5bc;
+}
+
+.plan .plan-details h4 {
+    padding-right: 10px;
+    margin: 0%;
+}
+
+.plan .plan-action {
+    background-color: #fbf3d5;
+    border: solid 1px #f1e5bc;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.plan .plan-action p {
+    text-align: center;
+    padding: 10px;
+    margin: 0%;
+}
+
+.plan .plan-action .small-para {
+    display: none;
+}
+
+.small-btn {
+    display: none;
+}
+
+.buy-btn {
+    text-align: center;
+    margin-left: auto;
+    text-decoration: none;
+    color: white;
+    background-color: #009dff;
+    border: solid 1px #009dff;
+    padding: 10px 5px;
+    cursor: pointer;
+    transition: 0.2s;
+    font-weight: 500;
+    border-radius: 3px;
+}
+
+.buy-btn:hover{
+    background-color: #018ce3;
+}
+
+@media screen and (max-width: 950px) {
+    .subscription-main {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .plan .plan-action .small-para {
+        display: block;
+    }
+
+    .plan .plan-action .large-para {
+        display: none;
+    }
+
+    .buy-btn {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .small-btn {
+        display: block;
+    }
+
+    .large-btn {
+        display: none;
+    }
+
+    .buy-btn{
+        padding: 8px 10px;
+    }
+}
+
+@media screen and (max-width: 460px){
+    .plan .plan-action {
+        flex-direction: column;
+        align-items: unset;
+    }
+
+    .buy-btn {
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,201 @@
+.main-bar-community {
+  width: calc(100% - 380px - 40px);
+  float: left;
+  margin: 25px 0px;
+  padding: 0;
+}
+.main-bar-community p {
+  margin: 0;
+}
+
+.main-bar-community-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-container-outer .user-detail {
+  display: flex;
+  flex-direction: column;}
+
+.post-container-outer .post-container .post-header .user-detail p{
+  padding: 3px 0 0 10px;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 0%;
+}
+
+.main-bar-community-header h1 {
+  font-weight: 400;
+  text-align: center;
+}
+
+.main-bar-community-header .post-btn,
+.post-container .post-header .add-friend-btn,
+.main-bar-community-header .friend-btn {
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  background-color: #009dff;
+  color: white;
+  border: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.main-bar-community-header .post-btn,
+.main-bar-community-header .friend-btn {
+  margin: 20px 0 0 0;
+}
+
+.post-container .post-header .delete-post-btn {
+  background-color: transparent;
+  border: none;
+  padding: 5px 0px;
+  margin: 0px 10px 0px auto;
+  color: rgb(69, 69, 69);
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.post-container .post-header .delete-post-btn:hover {
+  color: black;
+}
+
+.main-bar-community-header .post-btn:hover {
+  background-color: #0086d8;
+}
+
+.post-container-outer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.post-container {
+  width: 80%;
+  margin-top: 20px;
+  box-shadow: 0 10px 25px rgb(0 0 0 / 5%), 0 20px 48px rgb(0 0 0 / 5%),
+    0 1px 4px rgb(0 0 0 / 10%);
+  border-bottom: solid 1px #f1e5bc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #f1f2f3;
+  border-radius: 8px;
+}
+
+.post-container .post-header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: solid 1px #00000033;
+}
+
+.post-container p {
+  padding: 0 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.post-container .post-header h4 {
+  margin: 0;
+  padding-left: 10px;
+}
+
+.post-container .post-header .add-friend-btn {
+  margin-left: auto;
+}
+
+.post-container .post-header .add-friend-btn span {
+  padding-right: 5px;
+}
+
+.post-container img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.post-container .liked-by {
+  display: flex;
+  justify-content: space-between;
+}
+.post-container .liked-by p {
+  margin: 5px 0 0 0;
+  padding: 0 10px;
+}
+
+.post-container .post-bottom {
+  display: flex;
+  padding: 0 10px 10px 10px;
+}
+
+.post-container .post-bottom .like-comment {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  cursor: pointer;
+  padding: 0 10px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.post-container .post-bottom .like-comment:hover {
+  background-color: rgb(226, 226, 226);
+}
+
+.post-container .post-bottom .like-comment p {
+  padding: 0 0 0 5px;
+}
+
+@media screen and (max-width: 1200px) {
+  .main-bar-community {
+    width: calc(100% - 300px - 30px);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .post-container {
+    width: 90%;
+  }
+  .main-bar-community {
+    width: calc(100% - 280px - 25px);
+  }
+  .find-friends {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .main-bar-community {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .post-container {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .post-container .post-header .plus-display {
+    display: none;
+  }
+
+  .main-bar-community-header .post-btn,
+  .post-container .post-header .add-friend-btn,
+  .main-bar-community-header .friend-btn {
+    font-size: 13px;
+    padding: 8px 13px;
+  }
+
+  .delete-post-btn {
+    font-size: 13px;
+  }
+
+  .post-container .post-header h4 {
+    font-size: 13px;
+  }
+}

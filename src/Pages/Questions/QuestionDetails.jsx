@@ -22,8 +22,7 @@ const QuestionDetails = () => {
   const User = useSelector((state) => (state.currentUserReducer))
   const navigate = useNavigate()
   const dispatch = useDispatch()
-  const Location = useLocation();
-  const url = "https://stack-overflow-clone-project.netlify.app/"
+  const url = "https://stack-overflow-clone-server.onrender.com"
 
   const handlePostAnswer = (e, answerLength) =>{
     e.preventDefault()
@@ -36,6 +35,7 @@ const QuestionDetails = () => {
         alert("Enter answer")
       }else{
         dispatch(postAnswer({ id, noOfAnswers: answerLength + 1, answerBody: answer, userAnswered: User.result.name, userId: User.result._id}))
+        setAnswer("")
       }
     }
 
@@ -118,7 +118,7 @@ const QuestionDetails = () => {
                 <section className="post-ans-container">
                   <h3>Your Answer</h3>
                   <form onSubmit={(e) => {handlePostAnswer(e, question.answer.length)}} >
-                    <textarea name="" id="" cols="30" rows="10" onChange={ e => setAnswer(e.target.value)}></textarea>
+                    <textarea value={answer} name="" id="" cols="30" rows="10" onChange={ e => setAnswer(e.target.value)}></textarea>
                     <input
                       type="submit"
                       className="post-ans-btn"

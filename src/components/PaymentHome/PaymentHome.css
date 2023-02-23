@@ -1,0 +1,76 @@
+.payment-main {
+  width: calc(100% - 300px - 24px);
+  float: left;
+  margin: 40px 0 15px 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.payment-main form {
+  width: 70%;
+  margin-top: 20px;
+  box-shadow: 0 10px 25px rgb(0 0 0 / 5%), 0 20px 48px rgb(0 0 0 / 5%),
+    0 1px 4px rgb(0 0 0 / 10%);
+  border-bottom: solid 1px #f1e5bc;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.payment-main form h5 {
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.payment-main form label input {
+  padding: 10px;
+  width: calc(100% - 30px);
+  border: solid 1px #0000003e;
+  font-size: 13px;
+}
+
+.payment-main form label:nth-child(3) {
+  margin: 20px 0;
+}
+
+.payment-main form h4 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.payment-btn {
+  width: fit-content;
+  color: white;
+  background-color: #009dff;
+  border: solid 1px #009dff;
+  margin-top: 10px;
+  padding: 10px 5px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.payment-btn:hover {
+  background-color: #018ce3;
+}
+
+@media screen and (max-width: 950px) {
+  .payment-main {
+      width: 100%;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .payment-main form {
+      width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .home-container-2 {
+    padding: 14px;
+  }
+}

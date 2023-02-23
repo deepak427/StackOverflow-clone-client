@@ -1,0 +1,162 @@
+.bot-container {
+  height: 40%;
+  width: 300px;
+  right: 60px;
+  bottom: 120px;
+  box-shadow: 0px 1px 5px #00000033;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  z-index: 5;
+  overflow-y: scroll;
+  background-color: #fdf7e2;
+}
+
+.chat-container {
+  display: flex;
+  align-items: center;
+  border: solid 1px #f1e5bc
+}
+
+.chat-container svg {
+  padding: 5px;
+  width: 22px;
+}
+
+.chat-container p {
+  padding: 5px;
+  border-radius: 2px;
+  line-height: 22px;
+  margin: 10px;
+}
+
+.bot {
+  color: black;
+  background-color: #fdf7e2;
+}
+
+.bot svg {
+  fill: black;
+}
+
+.user {
+  color: black;;
+  background-color: #fdf7e2;
+}
+
+.user p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.verify-container {
+  background-color: white;
+}
+
+.verify-container form {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.verify-container form label input {
+  padding: 10px;
+  width: 90%;
+  font-size: 13px;
+  border-radius: 5px;
+}
+
+.verify-container form label h4 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.verify-btn{
+  color: white;
+  background-color: #009dff;
+  border: solid 1px #009dff;
+  margin-top: 10px;
+  padding: 10px 5px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 3px;
+}
+
+.ask-to-bot {
+  width: 300px;
+  position: fixed;
+  bottom: 85px;
+  right: 0%;
+  margin-right: 60px;
+}
+
+.ask-to-bot form {
+  display: flex;
+  align-items: center;
+}
+
+.ask-to-bot .ask-btn {
+  padding: 7px 13px;
+  border: solid 1px blue;
+  border-radius: 3px;
+  background-color: #e7f8fe;
+  cursor: pointer;
+}
+
+.ask-to-bot .ask-btn:hover {
+  background-color: #d3e4eb;
+}
+
+.ask-to-bot input {
+  width: 30%;
+  flex-grow: 1;
+  padding: 8px 32px 8px 8px;
+  font-size: 13px;
+  border: solid 1px #0000003e;
+  border-radius: 3px;
+}
+
+.bot-container::-webkit-scrollbar {
+  width: 4px;
+}
+
+.bot-container::-webkit-scrollbar-thumb {
+  background-color: #655f5c;
+}
+
+.bot-icon {
+  border-radius: 50%;
+  background-color: #201e1c;
+  right: 70px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  transition: 0.2s;
+}
+
+.bot-icon img {
+  border-radius: 50%;
+  padding: 3px 5px;
+}
+
+.bot-icon:hover {
+  background-color: #3a3631;
+}
+
+@media screen and (max-width: 550px) {
+  .bot-container {
+      width: 230px;
+      right: 30px;
+  }
+
+  .ask-to-bot {
+    margin-right: 30px;
+    width: 230px;
+  }
+
+  .bot-icon {
+    right: 40px;
+  }
+}

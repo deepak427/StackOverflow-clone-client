@@ -1,10 +1,18 @@
 .left-sidebar{
-    width: 164px;
+    width: 50px;
     transform: translateZ(0);
     box-shadow: 1px 1px rgb(0,0,0,0.2);
     box-sizing: border-box;
     font-size: 13px;
-    transition: box-shadow ease-in-out 0.1s, trasform ease-in-out 0.1s;
+    transition: width .6s ease;
+}
+
+.left-sidebar:hover{
+    width: 164px;
+}
+
+.left-sidebar:hover .display{
+    display: block;
 }
 
 .side-nav{
@@ -16,21 +24,26 @@
 
 }
 
-.side-nav-div{
-    padding: 10px 0;
-}
-
 .side-nav-div div{
     padding: 10px;
 }
 
 .side-nav-links{
+    padding-right: 10px;
+    display: flex;
     text-decoration: none;
     color: #3a3a3a;
-    display: flex;
     justify-content: flex-start;
     align-items: center;
     padding-left: 10px;
+}
+
+.find-friends {
+    display: none;
+}
+
+.display {
+    display: none;
 }
 
 .side-nav-links:hover{
@@ -44,15 +57,12 @@
     border-right: solid 3px #ef8236;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (min-width: 775px) {
     .left-sidebar{
-
-    width: 100px;
+        width: 164px;
     }
-}
 
-@media screen and (max-width: 350px) {
-    .left-sidebar{
-        display: none;
+    .display{
+        display: block;
     }
 }

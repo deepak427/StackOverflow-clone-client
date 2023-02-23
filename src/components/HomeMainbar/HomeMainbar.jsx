@@ -2,14 +2,21 @@ import React from 'react'
 import {Link, useLocation} from 'react-router-dom'
 import QuestionsList from './QuestionsList'
 import './HomeMainbar.css'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
+import { useEffect } from 'react'
+import { fetchAllUsers } from "../../actions/users";
 
 const HomeMainbar = () => {
 
-  const user = 1;
+  const user = useSelector((state) => (state.currentUserReducer));
   const Location = useLocation()
+  const dispatch = useDispatch();
 
   const questionList = useSelector(state => state.questionReducer)
+
+  useEffect(() => {
+    dispatch(fetchAllUsers())
+  },[])
 
   return (
     <div className='main-bar'>
@@ -25,7 +32,7 @@ const HomeMainbar = () => {
           <h1>Loading...</h1> :
           <>
             <p>{questionList.data.length} Questions</p>
-            <QuestionsList questionList={questionList.data} />
+            <QuestionsList questionList={questionList.data.reduce((acc, item)=> [item].concat(acc), [])} />
           </>
         }
       </div>

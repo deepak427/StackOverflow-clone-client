@@ -8,6 +8,12 @@ import DisplayQuestion from './Pages/Questions/DisplayQuestion'
 import Tags from './Pages/Tags/Tags'
 import Users from './Pages/Users/Users'
 import UserProfile from './Pages/UserProfile/UserProfile'
+import Subscription from './Pages/Subscription/Subscription'
+import Payment from './Pages/Payment/Payment'
+import Community from './Pages/Community/Community'
+import Post from './Pages/Post/Post'
+import FriendsHome from './Pages/Friends/Friends'
+import FindFriends from './Pages/FindFriends/FindFriends'
 
 const All_routes = () => {
   return (
@@ -20,6 +26,12 @@ const All_routes = () => {
         <Route path="/Tags" element={<Tags/>} />
         <Route path="/Users" element={<Users/>} />
         <Route path="/Users/:id" element={<UserProfile/>} />
+        <Route path="/Subscription" element={<Subscription/>} />
+        <Route path="/Subscription/:id" element={<Payment/>} />
+        <Route path="/Community" element={<Community/>} />
+        <Route path="/Post" element={<Post/>} />
+        <Route path="/Friends" element={<FriendsHome/>} />
+        <Route path='/FindFriends' element={<FindFriends/>} />
     </Routes>
   )
 }
